@@ -1,3 +1,4 @@
+/* DAY 1 */
 ::-webkit-scrollbar{
     background: #000000;
     width:0.5vw;
@@ -33,7 +34,7 @@ nav{
     width:23vw;
     height:100vh;
     padding: 0.1vw 0;
-    background-color:#fba814;
+    background-color:#ffa200;
     position:sticky;
     top:0;
     /* left:0; */
@@ -92,20 +93,29 @@ nav{
     flex-direction:column;
     gap:1vw;
 }
-
+.n-p-song-img{
+    height:7.7vw;
+    /* border: 2px solid #696969; */
+}
+.n-p-song-title{
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 500;
+}
 .n-p-symb{
     display:flex;
     align-items: center;
     justify-content: space-around;
     gap:3.3vw;
+    font-size: 1.7vw;
 }
 .ex-tr-as-hit {
     width:180%;
     display: flex;
     justify-content: space-evenly;
     /* background: #1a1a2e; */
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
     .ex-tr-as-hit a {
@@ -124,8 +134,7 @@ nav{
     border-radius: 5px;
 }
 
-
-
+/* DAY 2 */
 
 .vcify-right-song{
     width:77vw;
@@ -133,4 +142,117 @@ nav{
     box-shadow: 0vw 0vw 0.4vw 0.2vw #000000;
     z-index: 10;
 
+}
+.vrs-txtara-n-logo{
+    display: flex;
+    margin: 1vw;
+    background-color: #ffffff21;
+    width:75.5vw;
+    padding:0.3vw 0 0 0.6vw;
+    border-radius: 3vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+.vrs-tnl-logo{
+    height:3.3vw;
+    width:auto;
+    position: absolute;
+    z-index: 10;
+}
+.vrs-tnl-textarea {
+    width: 50vw;
+    height: 3vw;
+    margin: 0.2vw;
+    background-color: #2D2D2D;
+    padding: 0.9vw 0 0 4vw;
+    border: none;
+    border-radius: 2vw;
+    color: #f0f0f0;
+    font-size: 1vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    resize: none;
+    position: relative;
+    
+}
+
+  .vrs-tnl-textarea:focus {
+    background-color: #fba814;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+.vrs-tnl-submit-btn{
+    height: 3vw;
+    margin: 0.2vw;
+    background-color: #2D2D2D;
+    padding: 0vw 1.5vw 0 1.5vw;
+    border: none;
+    border-radius: 2vw;
+    color: #f0f0f09c;
+    font-size: 1vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+
+}
+.vrs-tnl-submit-btn:hover{
+    background-color: #fba814;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    color:#000000;
+}
+.vrs-pla-yli-sts{
+    display: flex;
+    flex-direction: column;
+    /* max-height:0vh; */
+    height:85vh;
+    margin: 0.8vw;
+    background-color: #ffffff21;
+    width:76vw;
+    padding:0.3vw 0 0 0.6vw;
+    border-radius: 1vw 0 0 1vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+}
+.vrsp-header{
+    color:#ffa200;
+    font-size: 1.7vw;
+    font-weight: 700;
+    margin: 0 0 1vw 0.7vw;
+}
+.vrsp-song-card-holder{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vrsp-song-card{
+    margin: 0 0 1vw 0.7vw;
+    padding:1vw;
+    display:flex;
+    align-items:center;
+    /* justify-content:space-between; */
+    gap:0.7vw;
+    flex-direction:column;
+    height:20vw;
+    width:14vw;
+    border-radius: 0.5vw;
+    background-color: #2D2D2D;
+    /* box-shadow: 0 0 0.4vw 0.1vw #ffa200; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+
+}
+.vsrp-sc-cover-img{
+    height:12vw
+}
+.vsrp-sc-genre-name{
+    text-align: center;
+    font-size: 1.2vw;
+    color:#ffa200;
+
+}
+.vsrp-sc-genre-songs{
+    font-size: 0.7vw;
+    padding-top: 0.4vw;
+    text-align: center;
+    color:#f0f0f09c
 }
