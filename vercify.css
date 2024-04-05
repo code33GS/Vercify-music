@@ -102,6 +102,12 @@ nav{
     text-align: center;
     font-weight: 500;
 }
+.n-p-artst-name{
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 500;
+}
+
 .n-p-symb{
     display:flex;
     align-items: center;
@@ -230,7 +236,7 @@ nav{
     display:flex;
     align-items:center;
     /* justify-content:space-between; */
-    gap:0.7vw;
+    gap:0.2vw;
     flex-direction:column;
     height:20vw;
     width:14vw;
@@ -246,7 +252,13 @@ nav{
 }
 .vsrp-sc-genre-name{
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    color:#ffa200;
+
+}
+.vsrp-sc-artist-name{
+    text-align: center;
+    font-size: 1.1vw;
     color:#ffa200;
 
 }
@@ -254,5 +266,74 @@ nav{
     font-size: 0.7vw;
     padding-top: 0.4vw;
     text-align: center;
-    color:#f0f0f09c
+    color:#f0f0f09c;
+    /* position: relative; */
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+/* DAY 3 */
+
+.vsrp-sc-genre-n-play-btn {
+    position: relative;
+}
+
+ .vsrp-sc-genre-play-button {
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vw;
+    background-color: #ffa200;
+    width:3vw;
+    height:3vw;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border: 2px solid #000000;
+}
+
+.vsrp-sc-genre-play-button {
+    z-index: -1; 
+}
+.vrsp-song-card:hover{
+    animation: songcardanim 0.5s ease-in forwards;
+    .vsrp-sc-genre-play-button {
+        animation: playbtnanim 0.7s ease-in forwards;
+        cursor:pointer;
+    }
+    .vsrp-sc-genre-songs {
+        animation: songnamesbtnanim 0.2s ease-in forwards;
+
+    }
+}
+@keyframes songcardanim {
+    from{
+        background-color: #2D2D2D;
+    }
+    to{
+        background-color: #444444;
+    }
+}
+@keyframes playbtnanim{
+    from{
+        opacity:0;
+        z-index: -1; 
+
+    }
+    to{
+        opacity:1;
+        z-index: 10; 
+    }
+}
+@keyframes songnamesbtnanim{
+    from{
+        opacity:1;
+
+    }
+    to{
+        opacity:0;
+    }
 }
