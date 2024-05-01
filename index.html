@@ -1,9 +1,10 @@
+<!-- DAY 3 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vercify-music</title>
+    <title>Vercify-Music</title>
     <link rel="stylesheet" href="vercify.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +13,12 @@
     <link rel="icon" href="vercifysymb.png">
 </head>
 <body>
-    <!-- DAY 1 -->
     
     <nav>
         <ul class="vcify-left-nav-bar-top">
+            
             <li class="vlnb-logo" ><a href="link"><img class="vercify-og-logo" src="vercifylogo.png"></a></li>
+            <div class="vlnb-go-back"><i class="fa-solid fa-xmark"></i></div>
             <div class="divider-for-nav"></div>
             <li class="vlnb-nav-essts"><a href="#"><i class="fa-solid fa-house" style="color: #000000; padding-right: 1vw;"></i>Home</a></li>
             <div class="divider-for-nav"></div>
@@ -25,20 +27,36 @@
         <div class="vcify-left-nav-bar-bottom">
             <div class="now-play-ing-box">
                 <div class="n-p-text" style="font-weight: 400;">Now-Playing</div>
-                <div><img class="n-p-song-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg"></div>
+                <div><img class="n-p-song-img" src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T210A2PA4301PT17X19Y3D1020973557W29403H35284/views/1,width=550,height=550,appearanceId=2,backgroundColor=000000,noPt=true/retro-lets-play-some-music-classic-recorder-tee-mens-t-shirt.jpg"></div>
                 <div class="n-p-song-desc">
-                    <div class="n-p-song-title"></div>
-                    <div class="n-p-song-title" style="color:#fba814"></div>
+                    <div class="n-p-song-title"><ul>Song</ul></div>
+                    <div class="n-p-artst-name" style="color:#ffa200"><ul>(Artist)</ul></div>
                 </div>
-                <div class="n-p-symb">
-                    <i class="fa-solid fa-angles-left" style="color: #000000;"></i>
-                    <!-- <i class="fa-solid fa-play" style="color: #000000;"></i> -->
-                    <i class="fa-solid fa-angles-right" style="color: #000000;"></i>
-                </div>
-                <div class="song-durn-n-prog-bar" style="display: flex; align-items: center;justify-content: center; gap:2%; width:150%">
-                    <div class="n-p-song-title">0:00</div>
-                    <div class="divider-for-nav" style="width:60%; height: 10%;"></div>
-                    <div class="n-p-song-title">0:00</div>
+                <!-- <div class="n-p-symb">
+                    <div class="prev-song-butn"><i class="fa-solid fa-angles-left" style="color: #000000;"></i></div>
+                    <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    <div class="soundbaranim">
+                        <ul class="wave-menu">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="next-song-butn"><i class="fa-solid fa-angles-right" style="color: #000000;"></i></div>
+                </div> -->
+                <div class="song-durn-n-prog-bar">
+                    <div class="n-p-song-live-durn">00:00</div>
+                    <div class="n-p-prog-bar">
+                        <div class="n-p-prog-bar-obj"><i class="fa-solid fa-music" style="color: #ffa200"></i></div>
+                    </div>                    
+                    <div class="n-p-song-durn">00:00</div>
                 </div>
 
             </div>
@@ -50,44 +68,74 @@
         </div>
     </nav>
 
-    <!-- DAY 2 -->
     <div class="vcify-right-song">
        <header class="vrs-txtara-n-logo">
-            <div><img class="vrs-tnl-logo" src="vercifysymb.png"></div>
-            <div><textarea class="vrs-tnl-textarea" placeholder="I've got a feedback / suggestion"></textarea></div>
-            <div><button class="vrs-tnl-submit-btn">Submit</button></div>
-            <div><button style="right:1vw;" class="vrs-tnl-submit-btn">Sign Up</button></div>
-            <div><button style="right:8.2vw;" class="vrs-tnl-submit-btn">Log In</button></div>
+            <div class="vrs-ham-burg"><i class="fa-solid fa-sliders" ></i></div>
+            <img class="vrs-tnl-logo" src="vercifysymb.png">
+            <textarea class="vrs-tnl-textarea" placeholder="I've got a feedback / suggestion"></textarea>
+            <button class="vrs-tnl-submit-btn submitmargin">Submit</button>
+            <button class="vrs-tnl-submit-btn signupmargin">Sign Up</button>
+            <button class="vrs-tnl-submit-btn loginmargin">Log In</button>
         </header>
         <div class="vrs-pla-yli-sts">
             <div class="vrsp-header">P L A Y L I S T S</div>
+
             <div class="vrsp-song-card-holder">
 
                 <a href="vercify-eng-rom.html" style="text-decoration: none;"><div class="vrsp-song-card">
-                    <div><img class="vsrp-sc-cover-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg" alt="Song Cover"></div>
+                    <div><img class="vsrp-sc-cover-img" src="https://images.squarespace-cdn.com/content/v1/5f2db84743c1761f87232471/1612901490539-DH9SKPMUIYW3N8B2Z4GJ/So+You+Fell+In+Love+v3.jpg" alt="Song Cover"></div>
                     <div class="vsrp-sc-genre-n-play-btn">
-                        <div class="vsrp-sc-genre-name">Romantic Songs (English)</div>
-                        <div class="vsrp-sc-genre-songs">Lorem ipsum doloronsectetur adipisicing elit. Laudantium, delectus.</div>
-                        <div class="vsrp-sc-genre-play-button"><i class="fa-solid fa-play" style="color: #000000;"></i></div>
+                        <div class="vsrp-sc-genre-name">Romantic Songs</div>
+                        <div class="vsrp-sc-artist-name">(English)</div>
+                        <div class="vsrp-sc-genre-songs">Perfect, Until I Found You, I Wanna Be Yours, Careless Whisper...</div>
+                        <button class="vsrp-sc-genre-play-button"><i class="fa-solid fa-play" style="color: #000000;"></i></button>
                     </div>
                 </div></a>
 
-                <div class="vrsp-song-card">
-                    <div><img class="vsrp-sc-cover-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg" alt="Song Cover"></div>
+                <a href="vercify-hin-rom.html" style="text-decoration: none;"><div class="vrsp-song-card">
+                    <div><img class="vsrp-sc-cover-img" src="https://upload.wikimedia.org/wikipedia/en/6/64/John_Legend_Love_in_the_Future.jpg" alt="Song Cover"></div>
                     <div class="vsrp-sc-genre-n-play-btn">
-                        <div class="vsrp-sc-genre-name">Genre: Song Name</div>
-                        <div class="vsrp-sc-genre-songs">Lorem ipsum doloronsectetur adipisicing elit. Laudantium, delectus.</div>
-                        <div class="vsrp-sc-genre-play-button"><i class="fa-solid fa-play" style="color: #000000;"></i></div>
+                        <div class="vsrp-sc-genre-name">Romantic Songs</div>
+                        <div class="vsrp-sc-artist-name">(Hindi)</div>
+                        <div class="vsrp-sc-genre-songs">Main Agar Kahoon, Zara Sa, Chand Sifarish, Kaise Hua, Jeene Laga...</div>
+                        <button class="vsrp-sc-genre-play-button"><i class="fa-solid fa-play" style="color: #000000;"></i></button>
                     </div>
-                </div>
-                
+                </div></a>
 
+                <!-- <a href="vercify-fg-eng.html" style="text-decoration: none;"><div class="vrsp-song-card">
+                    <div class="vsrp-sc-genre-n-play-btn">
+                        <div><img class="vsrp-sc-cover-img" src="https://i1.sndcdn.com/artworks-000599283125-og8gpm-t500x500.jpg" alt="Song Cover"></div>
+                        <div class="vsrp-sc-genre-name">Feel-Good Songs</div>
+                        <div class="vsrp-sc-artist-name">(English)</div>
+                        <div class="vsrp-sc-genre-songs">...</div>
+                        <button class="vsrp-sc-genre-play-button"><i class="fa-solid fa-play" style="color: #000000;"></i></button>
+                    </div>
+                </div></a>
+                
+                <a href="vercify-fg-hin.html" style="text-decoration: none;"><div class="vrsp-song-card">
+                    <div><img class="vsrp-sc-cover-img" src="https://i.pinimg.com/736x/79/18/70/791870ac85002703ff2763187a81452a.jpg" alt="Song Cover"></div>
+                    <div class="vsrp-sc-genre-n-play-btn">
+                        <div class="vsrp-sc-genre-name">Feel-Good Songs</div>
+                        <div class="vsrp-sc-artist-name">(Indian)</div>
+                        <div class="vsrp-sc-genre-songs">...</div>
+                        <button class="vsrp-sc-genre-play-button"><i class="fa-solid fa-play" style="color: #000000;"></i></button>
+                    </div>
+                </div></a> -->
+                
+                <!-- <a href="vercify-fg-eng.html" style="text-decoration: none;"><div class="vrsp-song-card">
+                    <div><img class="vsrp-sc-cover-img" src="link" alt="Song Cover"></div>
+                    <div class="vsrp-sc-genre-n-play-btn">
+                        <div class="vsrp-sc-genre-name">Genrename</div>
+                        <div class="vsrp-sc-artist-name">(lang)</div>
+                        <div class="vsrp-sc-genre-songs">Songs...</div>
+                        <button class="vsrp-sc-genre-play-button"><i class="fa-solid fa-play" style="color: #000000;"></i></button>
+                    </div>
+                </div></a> -->
                 
             </div>
             
         </div>
     </div>
-
-    <!-- <script src="vercify.js"></script> -->
+    
 </body>
 </html>
