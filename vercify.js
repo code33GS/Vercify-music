@@ -1,6 +1,5 @@
 // DAY 3
 
-
 async function getSongs() {
     let a = await fetch("http://127.0.0.1:5500/vercify/eng-rom-songs/")
     let response = await a.text();
@@ -47,8 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
             // // console.log(songURL)
             // var audio = new Audio(songURL);
             // audio.play();
-
-
         });
 
     });
@@ -85,21 +82,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const audio = new Audio(songURL);
 
         // DAY 6
-        
+
         audio.addEventListener("timeupdate", () => {
             // console.log(audio.currentTime, audio.duration);
-            document.querySelector('.n-p-song-live-durn').innerHTML = `${audioTimeToMinutesAndSeconds(audio.currentTime)}` 
-            document.querySelector('.n-p-song-durn').innerHTML = `${audioTimeToMinutesAndSeconds(audio.duration)}` 
-            
+            document.querySelector('.n-p-song-live-durn').innerHTML = `${audioTimeToMinutesAndSeconds(audio.currentTime)}`
+            document.querySelector('.n-p-song-durn').innerHTML = `${audioTimeToMinutesAndSeconds(audio.duration)}`
+
             document.querySelector('.n-p-prog-bar-obj').style.width = (audio.currentTime / audio.duration) * 100 + "%";
             document.querySelector('.n-p-prog-bar-obj i').style.left = (audio.currentTime / audio.duration) * 100 + "%";
         })
 
-        document.querySelector('.n-p-prog-bar').addEventListener("click", e=>{
+        document.querySelector('.n-p-prog-bar').addEventListener("click", e => {
             dragsongpos = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
             document.querySelector('.n-p-prog-bar-obj').style.width = dragsongpos + "%";
             document.querySelector('.n-p-prog-bar-obj i').style.left = dragsongpos + "%";
-            
+
             audio.currentTime = ((audio.duration) * dragsongpos) / 100
         })
 
@@ -110,20 +107,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentPlayingAudio.currentTime = 0;
                 const playingButton = document.querySelector('.fa-solid.fa-pause').parentNode;
                 playingButton.innerHTML = '<i class="fa-solid fa-play" style="color: #000000;"></i>';
-                soundbaranim.innerHTML = '<ul class="wave-menu"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>'
+                // soundbaranim.innerHTML = '<ul class="wave-menu"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>'
             }
 
             if (audio.paused) {
                 audio.play();
                 playButton.innerHTML = '<i class="fa-solid fa-pause" style="color: #000000;"></i>';
                 currentPlayingAudio = audio;
-                soundbaranim.innerHTML = '<ul class="wave-menu"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>'
+                // soundbaranim.innerHTML = '<ul class="wave-menu"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>'
 
             } else {
                 audio.pause();
                 playButton.innerHTML = '<i class="fa-solid fa-play" style="color: #000000;"></i>';
                 currentPlayingAudio = null;
-                soundbaranim.innerHTML = ''
+                // soundbaranim.innerHTML = ''
 
             }
         });
@@ -131,9 +128,21 @@ document.addEventListener('DOMContentLoaded', () => {
         audio.addEventListener('ended', () => {
             playButton.innerHTML = '<i class="fa-solid fa-play" style="color: #000000;"></i>';
             currentPlayingAudio = null;
-            soundbaranim.innerHTML = ''
+            // soundbaranim.innerHTML = ''
         });
+
     });
+
+});
+// Day 7
+document.querySelector('.vrs-ham-burg i').addEventListener('click', () => {
+    document.querySelector('nav').style.left = '0'
+    document.querySelector('.vcify-right-song').style.opacity = '0.5'
+
+});
+document.querySelector('.vlnb-go-back i').addEventListener('click', () => {
+    document.querySelector('nav').style.left = '-100%'
+    document.querySelector('.vcify-right-song').style.opacity = '1'
 
 });
 
