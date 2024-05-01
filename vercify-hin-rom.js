@@ -1,7 +1,7 @@
 // DAY 3
 
 async function getSongs() {
-    let a = await fetch("http://127.0.0.1:5500/vercify/hin-rom-songs/")
+    let a = await fetch("http://127.0.0.1:5500/hin-rom-songs/")
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     playButtons.forEach(playButton => {
         const card = playButton.closest('.vrsp-song-card, .vsrp-song-card');
         const songName = card.querySelector('.vsrp-sc-genre-name').textContent;
-        const songURL = `/vercify/hin-rom-songs/${encodeURIComponent(songName)}.mp3`;
+        const songURL = `/hin-rom-songs/${encodeURIComponent(songName)}.mp3`;
         const audio = new Audio(songURL);
 
         // DAY 6
